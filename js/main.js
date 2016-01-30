@@ -1,2 +1,6 @@
 var blue = document.getElementById("blueSquare");
-document.querySelector("div").className = ("blue");
+blue.className = ("blue");
+blue.className += (" spin");
+
+var red = document.getElementById("redRectangle");
+red.className = ("red");

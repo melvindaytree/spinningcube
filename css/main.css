@@ -96,16 +96,39 @@ textarea {
    ========================================================================== */
 
 .blue {
-  color:blue;
+  background-color:blue;
   width:100px;
   height:100px;
 }
 
+.spin {
+  animation: 5s spinnow infinite linear;
+}
+
 .red {
-  color:red;
+  background-color:red;
   width:300px;
   height:100px;
  }
+ 
+ @-webkit-keyframes spinnow {
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes spinnow {
+    100% {
+        transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+    }
+}
+@-ms-keyframes spinnow {
+    100% {
+        transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+    }
+}
 
 
 
